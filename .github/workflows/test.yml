@@ -13,7 +13,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pandas unittest
+          pip install pandas
       - name: Run test
         run: python -m unittest test.py
       

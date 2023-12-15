@@ -1,5 +1,11 @@
 name: Dashboard project
-on: push
+on: 
+  push: 
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+    types: 
+      - opened
 jobs: 
   test: 
     runs-on: windows-latest

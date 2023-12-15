@@ -6,7 +6,7 @@ from cleaning_function import *
 
 class Test(TestCase):
     def test_file(self):
-        df = pd.read_csv('abx_AUG_DUMMY.csv')
+        df = pd.read_csv('abx_MAY_DUMMY.csv')
         output = cleaning(df)
         output.to_csv('may_clean_test.csv', index = False, quoting = 1)
         self.assertTrue(os.path.exists('may_clean_test.csv'))
